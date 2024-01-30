@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "owenium",
+	"version": "${version}",
+	"name": "Owenium",
+	"description": "owenium",
+	"authors": [
+		"ShatterdPotato"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/owenium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"shatterdpotato.owenium.Owenium"
+		],
+		"client": [
+			"shatterdpotato.owenium.OweniumClient"
+		],
+		"fabric-datagen": [
+			"shatterdpotato.owenium.OweniumDataGenerator"
+		]
+	},
+	"mixins": [
+		"owenium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

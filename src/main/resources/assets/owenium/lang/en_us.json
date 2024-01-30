@@ -1,0 +1,20 @@
+{
+  "item.owenium.owenium": "Owenium",
+  "item.owenium.refined_owenium": "Refined Owenium",
+  "item.owenium.owenium_detector": "Owenium Detector",
+  "item.owenium.owenium_apple": "Owenium Apple",
+  "item.owenium.nuclear_owenium": "Nuclear Owenium Waste",
+
+  "block.owenium.block_of_owenium": "Block Of Owenium",
+  "block.owenium.owenium_planks": "Owenium Planks",
+  "block.owenium.owenium_ore": "Owenium Ore",
+  "block.owenium.deepslate_owenium_ore": "Deepslate Owenium Ore",
+  "block.owenium.nuclear_owenium_ore": "Nuclear Owenium Ore",
+  "block.owenium.deepslate_nuclear_owenium_ore": "Deepslate Nuclear Owenium Ore",
+  "block.owenium.owenium_emitter": "Owenium Sound Emitter",
+  "block.owenium.enlightened_owenium_emitter": "Enlightened Owenium Sound Emitter",
+  "block.owenium.compressed_nuclear_owenium": "Compressed Nuclear Owenium",
+
+  "itemgroup.owenium": "OWENIUM"
+
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "owenium:block_of_owenium"
+    }
+  ],
+  "result": {
+    "item": "owenium:refined_owenium",
+    "count": 9
+  }
+}

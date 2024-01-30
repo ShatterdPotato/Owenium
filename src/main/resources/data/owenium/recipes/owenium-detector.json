@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  @",
+    "|%|",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "%": {
+      "item": "owenium:refined_owenium"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    },
+    "@": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "owenium:owenium_detector"
+  }
+}

@@ -1,0 +1,13 @@
+/effect give @s minecraft:hunger 5 2
+/effect give @a minecraft:hunger 2 10
+/damage @a
+/damage Player448
+/damage
+/damage @a[ nbt=222
+/summon minecraft:creeper
+/give @s owenium:owenium_apple
+/enchant @s minecraft:blast_protection 4
+/locate structure minecraft:village_plains
+/tp @s -1376 ~ 592
+/time set night
+/summon minecraft:villager

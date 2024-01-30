@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#@#",
+    "@%@",
+    "#@#"
+  ],
+  "key": {
+    "#": {
+      "item": "owenium:refined_owenium"
+    },
+    "%": {
+      "item": "minecraft:note_block"
+    },
+    "@": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "owenium:owenium_emitter"
+  }
+}

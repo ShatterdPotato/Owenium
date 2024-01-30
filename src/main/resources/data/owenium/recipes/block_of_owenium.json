@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "owenium:refined_owenium"
+    }
+  },
+  "result": {
+    "item": "owenium:block_of_owenium"
+  }
+}

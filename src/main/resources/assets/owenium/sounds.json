@@ -1,0 +1,32 @@
+{
+  "owenium_dialog_1": {
+    "subtitle": "sounds.owenium.owenium_dialog_1",
+    "sounds": [
+      "owenium:owenium_dialog_1"
+    ]
+  },
+  "owenium_dialog_2": {
+    "subtitle": "sounds.owenium.owenium_dialog_2",
+    "sounds": [
+      "owenium:owenium_dialog_2"
+    ]
+  },
+  "enlightened_owenium_dialog_1": {
+    "subtitle": "sounds.owenium.enlightened_owenium_dialog_1",
+    "sounds": [
+      "owenium:enlightened_owenium_dialog_1"
+    ]
+  },
+  "enlightened_owenium_dialog_2": {
+    "subtitle": "sounds.owenium.enlightened_owenium_dialog_2",
+    "sounds": [
+      "owenium:enlightened_owenium_dialog_2"
+    ]
+  },
+  "enlightened_owenium_dialog_3": {
+    "subtitle": "sounds.owenium.enlightened_owenium_dialog_3",
+    "sounds": [
+      "owenium:enlightened_owenium_dialog_3"
+    ]
+  }
+}

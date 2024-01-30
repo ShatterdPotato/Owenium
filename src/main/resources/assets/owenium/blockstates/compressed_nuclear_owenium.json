@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "":  {
+      "model": "owenium:block/compressed_nuclear_owenium"
+    }
+  }
+
+}
