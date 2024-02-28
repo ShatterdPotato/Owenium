@@ -15,6 +15,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import shatterdpotato.owenium.block.ModBlocks;
+import shatterdpotato.owenium.sound.ModSounds;
+import net.minecraft.world.World;
 
 public class OweniumDetectorItem extends Item {
    public OweniumDetectorItem(Settings settings) {
@@ -30,7 +32,7 @@ public class OweniumDetectorItem extends Item {
          for(int i = 0; i <= positionClicked.getY() + 64; ++i) {
             BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
             if (isValuableBlock(state)) {
-               outputValuableCoordinates(positionClicked.down(i), player, state.getBlock());
+               outputValuableCoordinates(positionClicked.down(i), player, state.getBlock(), context);
                foundBlock = true;
                break;
             }
@@ -46,8 +48,10 @@ public class OweniumDetectorItem extends Item {
       return ActionResult.SUCCESS;
    }
 
-   private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block block) {
+   private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block block, ItemUsageContext context) {
       player.sendMessage(Text.translatable("O W E N I U M  found at (" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"), false);
+      World world = context.getWorld();
+      world.playSound(player, blockPos, ModSounds.OWENIUM_FOUND, SoundCategory.BLOCKS, 1, 1);
    }
 
    private boolean isValuableBlock(BlockState state) {

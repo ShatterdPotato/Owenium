@@ -28,5 +28,17 @@
     "sounds": [
       "owenium:enlightened_owenium_dialog_3"
     ]
+  },
+  "owenium_explosion": {
+    "subtitle": "sounds.owenium.owenium_explosion",
+    "sounds": [
+      "owenium:owenium_explosion"
+    ]
+  },
+  "owenium_found": {
+    "subtitle": "sounds.owenium.owenium_found",
+    "sounds": [
+      "owenium:owenium_found"
+    ]
   }
 }

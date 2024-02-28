@@ -13,6 +13,8 @@ public class ModSounds {
    public static SoundEvent ENLIGHTENED_OWENIUM_DIALOG_1 = registerSoundEvent("enlightened_owenium_dialog_1");
    public static SoundEvent ENLIGHTENED_OWENIUM_DIALOG_2 = registerSoundEvent("enlightened_owenium_dialog_2");
    public static SoundEvent ENLIGHTENED_OWENIUM_DIALOG_3 = registerSoundEvent("enlightened_owenium_dialog_3");
+   public static SoundEvent OWENIUM_EXPLOSION = registerSoundEvent("owenium_explosion");
+   public static SoundEvent OWENIUM_FOUND = registerSoundEvent("owenium_found");
 
    private static SoundEvent registerSoundEvent(String name) {
       Identifier id = new Identifier(Owenium.MOD_ID, name);
