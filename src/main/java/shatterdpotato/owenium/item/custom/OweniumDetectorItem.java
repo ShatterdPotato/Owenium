@@ -33,6 +33,7 @@ public class OweniumDetectorItem extends Item {
             BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
             if (isValuableBlock(state)) {
                outputValuableCoordinates(positionClicked.down(i), player, state.getBlock(), context);
+               context.getWorld().playSound(player, player.getBlockPos(), ModSounds.OWENIUM_EXPLOSION, SoundCategory.AMBIENT, 1.0F, 1.0F);
                foundBlock = true;
                break;
             }
@@ -49,12 +50,11 @@ public class OweniumDetectorItem extends Item {
    }
 
    private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block block, ItemUsageContext context) {
-      player.sendMessage(Text.translatable("O W E N I U M  found at (" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"), false);
-      World world = context.getWorld();
-      world.playSound(player, blockPos, ModSounds.OWENIUM_FOUND, SoundCategory.BLOCKS, 1, 1);
+      String found_block = block.getName().getString();
+      player.sendMessage(Text.translatable(found_block + " found at (" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"), false);
    }
 
    private boolean isValuableBlock(BlockState state) {
-      return state.isOf(ModBlocks.OWENIUM_ORE) || state.isOf(ModBlocks.DEEPSLATE_OWENIUM_ORE);
+      return state.isOf(ModBlocks.OWENIUM_ORE) || state.isOf(ModBlocks.DEEPSLATE_OWENIUM_ORE) || state.isOf(ModBlocks.NUCLEAR_OWENIUM_ORE) || state.isOf(ModBlocks.DEEPSLATE_NUCLEAR_OWENIUM_ORE);
    }
 }
