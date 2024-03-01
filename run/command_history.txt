@@ -11,3 +11,5 @@
 /tp @s -1376 ~ 592
 /time set night
 /summon minecraft:villager
+/gamemode survival
+/gamemode creative

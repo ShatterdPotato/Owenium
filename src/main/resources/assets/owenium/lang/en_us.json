@@ -15,6 +15,9 @@
   "block.owenium.enlightened_owenium_emitter": "Enlightened Owenium Sound Emitter",
   "block.owenium.compressed_nuclear_owenium": "Compressed Nuclear Owenium",
 
+  "tooltip.owenium.owenium_detector": "Must...find....o w e n i u m",
+  "tooltip.owenium.compressed_nuclear_owenium": "Highly reactive, DO NOT TOUCH IT WITH MORE NUCLEAR OWENIUM!!!!!",
+
   "itemgroup.owenium": "OWENIUM"
 
 }

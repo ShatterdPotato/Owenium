@@ -18,13 +18,16 @@ import shatterdpotato.owenium.block.ModBlocks;
 import shatterdpotato.owenium.sound.ModSounds;
 import net.minecraft.world.World;
 
+import java.util.List;
+
 public class OweniumDetectorItem extends Item {
    public OweniumDetectorItem(Settings settings) {
       super(settings);
    }
 
    public ActionResult useOnBlock(ItemUsageContext context) {
-      if (!context.getWorld().isClient) {
+
+      if (context.getWorld().isClient) {
          BlockPos positionClicked = context.getBlockPos();
          PlayerEntity player = context.getPlayer();
          boolean foundBlock = false;
@@ -32,21 +35,31 @@ public class OweniumDetectorItem extends Item {
          for(int i = 0; i <= positionClicked.getY() + 64; ++i) {
             BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
             if (isValuableBlock(state)) {
+               context.getWorld().playSound(context.getPlayer(), context.getPlayer().getBlockPos(), ModSounds.OWENIUM_FOUND, SoundCategory.AMBIENT, 1, 1);
                outputValuableCoordinates(positionClicked.down(i), player, state.getBlock(), context);
-               context.getWorld().playSound(player, player.getBlockPos(), ModSounds.OWENIUM_EXPLOSION, SoundCategory.AMBIENT, 1.0F, 1.0F);
                foundBlock = true;
                break;
             }
+
          }
 
          if (!foundBlock) {
             player.sendMessage(Text.translatable("No Owenium Detected :("));
          }
+
+
       }
 
       context.getStack().damage(1, context.getPlayer(),
               playerEntity -> playerEntity.sendToolBreakStatus(playerEntity.getActiveHand()));
+
       return ActionResult.SUCCESS;
+   }
+
+   @Override
+   public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+      tooltip.add(Text.translatable("tooltip.owenium.owenium_detector"));
+      super.appendTooltip(stack, world, tooltip, context);
    }
 
    private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block block, ItemUsageContext context) {
@@ -57,4 +70,5 @@ public class OweniumDetectorItem extends Item {
    private boolean isValuableBlock(BlockState state) {
       return state.isOf(ModBlocks.OWENIUM_ORE) || state.isOf(ModBlocks.DEEPSLATE_OWENIUM_ORE) || state.isOf(ModBlocks.NUCLEAR_OWENIUM_ORE) || state.isOf(ModBlocks.DEEPSLATE_NUCLEAR_OWENIUM_ORE);
    }
+
 }

@@ -1,5 +1,5 @@
-[21:01:29] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.4 with Fabric Loader 0.15.6
-[21:01:30] [main/INFO] (FabricLoader) Loading 57 mods:
+[13:09:18] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.4 with Fabric Loader 0.15.6
+[13:09:19] [main/INFO] (FabricLoader) Loading 57 mods:
 	- fabric-api 0.95.1+1.20.4
 	- fabric-api-base 0.4.36+78d798af4f
 	- fabric-api-lookup-api-v1 1.6.47+82b1bb3e4f
@@ -57,196 +57,109 @@
 	- minecraft 1.20.4
 	- mixinextras 0.3.2
 	- owenium 0.3-1.20.4-ALPHA
-[21:01:30] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
-[21:01:31] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[21:01:31] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[21:01:34] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
-[21:01:49] [Datafixer Bootstrap/INFO] (Minecraft) 198 Datafixer optimizations took 437 milliseconds
-[21:01:55] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[21:01:55] [Render thread/INFO] (Minecraft) Setting user: Player885
-[21:01:55] [Download-2/ERROR] (Minecraft) Failed to fetch user properties
+[13:09:19] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/saahm/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[13:09:20] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[13:09:20] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[13:09:22] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
+[13:09:33] [Datafixer Bootstrap/INFO] (Minecraft) 198 Datafixer optimizations took 567 milliseconds
+[13:09:44] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[13:09:44] [Render thread/INFO] (Minecraft) Setting user: Player718
+[13:09:44] [Render thread/INFO] (owenium) Registering Item Groups for owenium
+[13:09:44] [Render thread/INFO] (owenium) Registering Mod Items for owenium
+[13:09:45] [Render thread/INFO] (owenium) Registering ModBlocks for owenium
+[13:09:45] [Download-2/ERROR] (Minecraft) Failed to fetch user properties
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:59) ~[authlib-6.0.52.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:150) ~[authlib-6.0.52.jar:?]
-	at net.minecraft.client.MinecraftClient.method_55608(MinecraftClient.java:526) ~[minecraft-merged-67dccd55cc-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.method_55608(MinecraftClient.java:467) ~[minecraft-merged-67dccd55cc-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2.jar:?]
 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
 Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
 	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:100) ~[authlib-6.0.52.jar:?]
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.52.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:121) ~[authlib-6.0.52.jar:?]
 	... 5 more
-[21:01:55] [Render thread/INFO] (fabric-networking-api-v1) Force Packet Serialization is enabled to mimic remote connection on single player, this is the default behaviour on dev env. Add -Dfabric-api.networking.force-packet-serialization=false JVM arg to disable it.
-[21:01:56] [Render thread/INFO] (owenium) Registering Item Groups for owenium
-[21:01:56] [Render thread/INFO] (owenium) Registering Mod Items for owenium
-[21:01:56] [Render thread/INFO] (owenium) Registering ModBlocks for owenium
-[21:01:56] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[21:01:57] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.2-snapshot
-[21:02:00] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-message-api-v1, fabric-rendering-fluids-v1, fabric-content-registries-v0, fabric-transfer-api-v1, fabric-rendering-v0, fabric-screen-api-v1, fabric-containers-v0, fabric-registry-sync-v0, fabric-screen-handler-api-v1, fabric-renderer-indigo, fabric-block-view-api-v2, fabric-networking-api-v1, fabric-biome-api-v1, fabric-keybindings-v0, fabric-events-lifecycle-v0, fabric-api-base, fabric-resource-loader-v0, fabric-gametest-api-v1, fabric-mining-level-api-v1, fabric-api, fabric-rendering-data-attachment-v1, fabric-command-api-v1, fabric-convention-tags-v1, owenium, fabric-data-generation-api-v1, fabric-object-builder-api-v1, fabric-transitive-access-wideners-v1, fabric-events-interaction-v0, fabric-loot-api-v2, fabric-item-api-v1, fabric-sound-api-v1, fabric-particles-v1, fabric-game-rule-api-v1, fabric-model-loading-api-v1, fabric-commands-v0, fabric-blockrenderlayer-v1, fabric-renderer-api-v1, fabric-rendering-v1, fabric-item-group-api-v1, fabric-crash-report-info-v1, fabric-resource-conditions-api-v1, fabric-recipe-api-v1, fabric-api-lookup-api-v1, fabric-data-attachment-api-v1, fabric-key-binding-api-v1, fabric-command-api-v2, fabric-block-api-v1, fabricloader, fabric-entity-events-v1, fabric-models-v0, fabric-lifecycle-events-v1, fabric-dimensions-v1, fabric-client-tags-api-v1, fabric-renderer-registries-v1)
-[21:02:01] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.1.04.hex, loading
-[21:02:01] [Worker-Main-3/WARN] (Minecraft) Texture owenium:block/enlightened_owenium_emitter with size 587x587 limits mip level from 4 to 0
-[21:02:01] [Worker-Main-3/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
-[21:02:03] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[21:02:03] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[21:02:03] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.generic.wind_burst
-[21:02:04] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Speaker/Headphone (Realtek(R) Audio)
-[21:02:04] [Render thread/INFO] (Minecraft) Sound engine started
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 4096x2048x0 minecraft:textures/atlas/blocks.png-atlas
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[21:02:04] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[21:02:06] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[21:02:07] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[21:02:07] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[21:02:07] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[21:02:07] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[21:02:07] [IO-Worker-1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[21:02:07] [IO-Worker-1/ERROR] (Minecraft) Couldn't connect to realms
+[13:09:45] [Render thread/INFO] (fabric-networking-api-v1) Force Packet Serialization is enabled to mimic remote connection on single player, this is the default behaviour on dev env. Add -Dfabric-api.networking.force-packet-serialization=false JVM arg to disable it.
+[13:09:45] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[13:09:46] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.2-snapshot
+[13:09:48] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-resource-conditions-api-v1, fabric-events-interaction-v0, fabric-renderer-indigo, fabric-block-view-api-v2, fabric-message-api-v1, fabric-commands-v0, fabric-screen-api-v1, fabric-client-tags-api-v1, fabric-particles-v1, fabric-block-api-v1, fabricloader, fabric-blockrenderlayer-v1, fabric-api-base, fabric-renderer-registries-v1, owenium, fabric-item-group-api-v1, fabric-renderer-api-v1, fabric-transfer-api-v1, fabric-game-rule-api-v1, fabric-data-generation-api-v1, fabric-containers-v0, fabric-api-lookup-api-v1, fabric-rendering-v1, fabric-rendering-data-attachment-v1, fabric-dimensions-v1, fabric-recipe-api-v1, fabric-api, fabric-transitive-access-wideners-v1, fabric-models-v0, fabric-rendering-v0, fabric-sound-api-v1, fabric-keybindings-v0, fabric-command-api-v1, fabric-resource-loader-v0, fabric-registry-sync-v0, fabric-item-api-v1, fabric-screen-handler-api-v1, fabric-crash-report-info-v1, fabric-rendering-fluids-v1, fabric-biome-api-v1, fabric-lifecycle-events-v1, fabric-data-attachment-api-v1, fabric-key-binding-api-v1, fabric-command-api-v2, fabric-convention-tags-v1, fabric-object-builder-api-v1, fabric-model-loading-api-v1, fabric-loot-api-v2, fabric-networking-api-v1, fabric-content-registries-v0, fabric-events-lifecycle-v0, fabric-mining-level-api-v1, fabric-gametest-api-v1, fabric-entity-events-v1)
+[13:09:48] [Worker-Main-4/INFO] (Minecraft) Found unifont_all_no_pua-15.1.04.hex, loading
+[13:09:49] [Worker-Main-5/WARN] (Minecraft) Texture owenium:block/enlightened_owenium_emitter with size 587x587 limits mip level from 4 to 0
+[13:09:49] [Worker-Main-5/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
+[13:09:51] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[13:09:51] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[13:09:51] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.generic.wind_burst
+[13:09:52] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Speaker (Realtek(R) Audio)
+[13:09:52] [Render thread/INFO] (Minecraft) Sound engine started
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 4096x2048x0 minecraft:textures/atlas/blocks.png-atlas
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[13:09:52] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[13:09:53] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[13:09:54] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[13:09:54] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[13:09:54] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[13:09:54] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[13:09:55] [IO-Worker-1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[13:09:55] [IO-Worker-1/ERROR] (Minecraft) Couldn't connect to realms
 net.minecraft.client.realms.exception.RealmsServiceException: Realms authentication error with message 'Invalid session id'
-	at net.minecraft.client.realms.RealmsClient.execute(RealmsClient.java:414) ~[minecraft-merged-67dccd55cc-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2.jar:?]
-	at net.minecraft.client.realms.RealmsClient.clientCompatible(RealmsClient.java:207) ~[minecraft-merged-67dccd55cc-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2.jar:?]
-	at net.minecraft.client.realms.RealmsAvailability.method_52627(RealmsAvailability.java:44) ~[minecraft-merged-67dccd55cc-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2.jar:?]
+	at net.minecraft.client.realms.RealmsClient.execute(RealmsClient.java:447) ~[minecraft-merged-67dccd55cc-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2.jar:?]
+	at net.minecraft.client.realms.RealmsClient.clientCompatible(RealmsClient.java:232) ~[minecraft-merged-67dccd55cc-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2.jar:?]
+	at net.minecraft.client.realms.RealmsAvailability.method_52627(RealmsAvailability.java:45) ~[minecraft-merged-67dccd55cc-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2.jar:?]
 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-[21:02:15] [Render thread/INFO] (Minecraft) Loaded 7 recipes
-[21:02:15] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
-[21:02:16] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 3.681 ms
-[21:02:16] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.4
-[21:02:16] [Server thread/INFO] (Minecraft) Generating keypair
-[21:02:18] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 4%
-[21:02:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 70%
-[21:02:24] [Render thread/INFO] (Minecraft) Time elapsed: 5170 ms
-[21:02:24] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[21:02:24] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[21:02:26] [Server thread/INFO] (Minecraft) Player885[local:E:800747c7] logged in with entity id 109 at (-1406.0547503271794, 89.7485298461231, 382.24786755219765)
-[21:02:26] [Server thread/INFO] (Minecraft) Player885 joined the game
-[21:02:26] [Server thread/INFO] (Minecraft) Player885 has made the advancement [Stone Age]
-[21:02:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player885 has made the advancement [Stone Age]
-[21:02:28] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2214ms or 44 ticks behind
-[21:02:28] [Render thread/INFO] (Minecraft) Loaded 37 advancements
-[21:02:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:32] [Render thread/WARN] (Minecraft) Received passengers for unknown entity
-[21:02:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:52] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:02:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:02:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:02:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:02:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Deepslate Owenium Ore found at (-1406, 88, 382)
-[21:02:56] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:02:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:02:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:02:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:03:09] [Render thread/INFO] (Minecraft) Loaded 46 advancements
-[21:03:25] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:03:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:03:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:03:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:04:22] [Render thread/INFO] (Minecraft) Loaded 60 advancements
-[21:05:05] [Render thread/INFO] (Minecraft) Loaded 62 advancements
-[21:05:13] [Render thread/INFO] (Minecraft) Loaded 72 advancements
-[21:05:31] [Render thread/INFO] (Minecraft) [System] [CHAT] No Owenium Detected :(
-[21:05:31] [Render thread/INFO] (Minecraft) [System] [CHAT] No Owenium Detected :(
-[21:05:34] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[21:05:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:05:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:05:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:05:35] [Server thread/INFO] (Minecraft) Player885 lost connection: Disconnected
-[21:05:35] [Server thread/INFO] (Minecraft) Player885 left the game
-[21:05:35] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[21:05:35] [Server thread/INFO] (Minecraft) Stopping server
-[21:05:35] [Server thread/INFO] (Minecraft) Saving players
-[21:05:35] [Server thread/INFO] (Minecraft) Saving worlds
-[21:05:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[21:05:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[21:05:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[21:05:37] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[21:05:37] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:05:37] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:05:37] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[21:07:37] [Render thread/INFO] (Minecraft) Stopping!
+	at java.lang.Thread.run(Thread.java:842) ~[?:?]
+[13:10:07] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[13:10:07] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[13:10:08] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 2.373 ms
+[13:10:08] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.4
+[13:10:08] [Server thread/INFO] (Minecraft) Generating keypair
+[13:10:10] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[13:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[13:10:15] [Render thread/INFO] (Minecraft) Preparing spawn area: 5%
+[13:10:15] [Render thread/INFO] (Minecraft) Preparing spawn area: 82%
+[13:10:15] [Render thread/INFO] (Minecraft) Time elapsed: 5685 ms
+[13:10:16] [Server thread/INFO] (Minecraft) Changing view distance to 8, from 10
+[13:10:16] [Server thread/INFO] (Minecraft) Changing simulation distance to 8, from 0
+[13:10:17] [Server thread/INFO] (Minecraft) Player718[local:E:715ee897] logged in with entity id 798 at (30.048755898291244, 51.0, -29.14039493832376)
+[13:10:17] [Server thread/INFO] (Minecraft) Player718 joined the game
+[13:10:17] [Server thread/INFO] (Minecraft) Player718 has made the advancement [Stone Age]
+[13:10:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Player718 has made the advancement [Stone Age]
+[13:10:17] [Render thread/INFO] (Minecraft) Loaded 30 advancements
+[13:10:21] [Render thread/INFO] (Minecraft) Loaded 32 advancements
+[13:10:31] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2174ms or 43 ticks behind
+[13:10:38] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[13:10:38] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[13:10:41] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[13:10:41] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[13:10:42] [Server thread/INFO] (Minecraft) Player718 lost connection: Disconnected
+[13:10:42] [Server thread/INFO] (Minecraft) Player718 left the game
+[13:10:42] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[13:10:42] [Server thread/INFO] (Minecraft) Stopping server
+[13:10:42] [Server thread/INFO] (Minecraft) Saving players
+[13:10:42] [Server thread/INFO] (Minecraft) Saving worlds
+[13:10:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[13:10:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[13:10:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[13:10:46] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[13:10:46] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:10:46] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:10:46] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[13:10:46] [Render thread/INFO] (Minecraft) Stopping!
