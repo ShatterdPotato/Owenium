@@ -31,9 +31,11 @@ public class CompressedNuclearOweniumBlock extends Block {
         if(isReactive(player)) {
             ItemUsageContext context = new ItemUsageContext(player, hand, hit);
             player.getInventory().getMainHandStack().getItem().useOnBlock(context);
+            world.removeBlock(pos, false);
             world.playSound(player, pos, ModSounds.OWENIUM_EXPLOSION, SoundCategory.BLOCKS, 10.0F, 1.0F);
-            world.removeBlock(pos,false);
             world.createExplosion(null,pos.getX(),pos.getY(),pos.getZ(),20, true,World.ExplosionSourceType.TNT);
+
+
 
         }
 
@@ -45,12 +47,12 @@ public class CompressedNuclearOweniumBlock extends Block {
         tooltip.add(Text.translatable("tooltip.owenium.compressed_nuclear_owenium"));
         super.appendTooltip(stack, world, tooltip, options);
     }
-
     public void onExploded(BlockState state, World world, BlockPos pos, Explosion explosion, BiConsumer<ItemStack, BlockPos> stackMerger) {
-        if (!(explosion.getPosition() == (pos.toCenterPos()))) {
-            world.playSoundAtBlockCenter(pos, ModSounds.OWENIUM_EXPLOSION, SoundCategory.BLOCKS, 10f, 1f, true);
+        if (explosion.getPosition() != pos.toCenterPos()) {
             world.removeBlock(pos, false);
-            world.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 20, true, World.ExplosionSourceType.TNT);
+            world.playSoundAtBlockCenter(pos, ModSounds.OWENIUM_EXPLOSION, SoundCategory.BLOCKS, 10f, 1f, true);
+            world.createExplosion(null,pos.getX(),pos.getY(),pos.getZ(),20, true,World.ExplosionSourceType.TNT);
+
         }
     }
 

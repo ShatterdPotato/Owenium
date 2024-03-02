@@ -15,9 +15,4 @@
   <component name="McpModuleSettings">
     <option name="srgType" value="SRG" />
   </component>
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <orderEntry type="jdk" jdkName="JDK 17" jdkType="JavaSDK" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
 </module>

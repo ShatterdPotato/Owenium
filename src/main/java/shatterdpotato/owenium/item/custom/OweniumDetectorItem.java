@@ -17,6 +17,7 @@ import org.jetbrains.annotations.Nullable;
 import shatterdpotato.owenium.block.ModBlocks;
 import shatterdpotato.owenium.sound.ModSounds;
 import net.minecraft.world.World;
+import shatterdpotato.owenium.util.ModTags;
 
 import java.util.List;
 
@@ -63,12 +64,12 @@ public class OweniumDetectorItem extends Item {
    }
 
    private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block block, ItemUsageContext context) {
-      String found_block = block.getName().getString();
+      String found_block = block.asItem().getName().getString();
       player.sendMessage(Text.translatable(found_block + " found at (" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"), false);
    }
 
    private boolean isValuableBlock(BlockState state) {
-      return state.isOf(ModBlocks.OWENIUM_ORE) || state.isOf(ModBlocks.DEEPSLATE_OWENIUM_ORE) || state.isOf(ModBlocks.NUCLEAR_OWENIUM_ORE) || state.isOf(ModBlocks.DEEPSLATE_NUCLEAR_OWENIUM_ORE);
+      return state.isIn(ModTags.Blocks.OWENIUM_DETECTOR_DETECTABLE);
    }
 
 }
